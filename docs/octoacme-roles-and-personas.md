@@ -79,3 +79,59 @@ Project Managers coordinate delivery activities, manage schedules, risks, and co
 - Use these persona definitions to frame scenarios and sample interactions in the Skills Exercise.
 - Each persona can be used as a persona prompt for Copilot Spaces to shape role-specific guidance.
 
+---
+
+## Additional Personas (proposed additions)
+
+These personas are proposed to reduce ambiguity, improve ownership, and clarify handoffs across planning, execution, release, and measurement.
+
+### Delivery Lead (Operational PM)
+- Responsibilities: Coordinates day-to-day delivery (sprint-level planning), runs standups, tracks sprint progress, owns sprint-level risk items and blockers, coordinates cross-functional work to unblock delivery.
+- Interacts with: Developers (daily syncs, removes blockers), Project Manager (escalates cross-sprint risks and progress), QA (ensures sprint-quality gate), Product Manager (aligns on sprint scope).
+- Example deliverables: Sprint commitment board, daily standup notes, sprint risk log.
+
+### Engineering Manager (Team Lead)
+- Responsibilities: Owns engineering capacity planning, developer mentoring, technical quality and architecture decisions, and technical debt prioritization.
+- Interacts with: Developers (coaching, code review guidance), Product Manager (capacity and trade-off discussions), Project Manager (resource planning), UX/Design (technical feasibility).
+- Example deliverables: Capacity forecasts, technical design reviews, staffing/mentorship plans.
+
+### UX / Design Lead
+- Responsibilities: Owns user research synthesis, interaction design, accessibility oversight, and ensures designs meet acceptance criteria prior to implementation.
+- Interacts with: Product Manager (requirements and acceptance criteria), Developers (handoff and implementation questions), QA (usability testing).
+- Example deliverables: Design specs, accessibility checklist, user research summaries.
+
+### Release Manager / On-call Coordinator
+- Responsibilities: Coordinates release scheduling and readiness checks, ensures deployment runbooks and rollback plans are in place, coordinates post-release verification and incident routing.
+- Interacts with: QA (release gates and smoke tests), SRE/DevOps (deployment pipelines), Product/PM (release windows and stakeholder notifications), Support (on-call handoff).
+- Example deliverables: Release checklist, deployment runbook, post-release verification report.
+
+### Stakeholder Representative (e.g., Sales / Support Lead)
+- Responsibilities: Serves as the voice of operational stakeholders (sales, support, customer success), provides business context and priority signals, participates in milestone reviews and acceptance decisions for cross-functional impacts.
+- Interacts with: Product Manager (priority and acceptance), Project Manager (communication and timelines), Developers and QA when clarifying customer scenarios.
+- Example deliverables: Stakeholder acceptance notes, customer impact assessments.
+
+### Data Analyst / Metrics Owner
+- Responsibilities: Defines success metrics, builds dashboards and reports, validates outcomes post-release, and ensures instrumentation is in place for experiments and releases.
+- Interacts with: Product Manager (success criteria), Developers (instrumentation needs), Project Manager (reporting cadence).
+- Example deliverables: Dashboards, metric definitions, A/B analysis summaries.
+
+---
+
+## How these personas interact (summary)
+- Delivery Lead syncs daily with Developers and reports sprint progress and blockers to the Project Manager.
+- Engineering Manager aligns with Developers on estimates and capacity, and advises Product on technical trade-offs.
+- UX Lead finalizes acceptance criteria and collaborates on QA scenarios to ensure design and accessibility goals are met.
+- Release Manager drives pre-release readiness checks with QA and SRE/DevOps and coordinates stakeholder notifications.
+- Stakeholder Representative attends milestone reviews and signs off on cross-functional impacts.
+- Data Analyst provides measurement frameworks and post-release analyses to validate success metrics.
+
+---
+
+## Suggested format for insertion in docs/octoacme-roles-and-personas.md
+- Add a short table or section per persona with:
+  - Persona name
+  - Responsibilities (short bullets)
+  - Typical interactions (who they work with)
+  - Example deliverables
+
+This keeps the document scannable and makes it easier to assign clear owners for actions and risks.
